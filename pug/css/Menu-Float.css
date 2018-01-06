@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.menu > li > a {
+  display: block;
+  padding: 0.5em 1.5em;
+}
+
+.menu ul li a {
+  white-space: nowrap;
+}
+
+.menu,
+ul {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.menu > li {
+  float: left;
+  background-color: #229cff;
+}
+
+.menu li {
+  position: relative;
+  transition: all 0.9s;
+}
+
+.submenu,
+.submenu-2 {
+  position: absolute;
+  background-color: #ffab8e;
+  display: none;
+}
+
+.submenu {
+  left: 0;
+}
+
+.submenu-2 {
+  left: 100%;
+  top: 0;
+}
+
+.submenu > li,
+.submenu-2 > li {
+  padding: 10px;
+}
+
+.menu li:hover {
+  background-color: rgba(35, 10, 59, 0.84);
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu li:hover .submenu-2 {
+  display: block;
+}
