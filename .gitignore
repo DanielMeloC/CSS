@@ -131,6 +131,23 @@ package.json
 gulpfile.js
 .stylelintrc
 
+dev/html/*1.html
+dev/html/*2.html
+dev/html/*3.html
+dev/html/*4.html
+dev/html/*5.html
+dev/html/index.html
+
+dev/css/*1.css
+dev/css/*2.css
+dev/css/*3.css
+dev/css/*4.css
+dev/css/*5.css
+dev/css/normalize.css
+dev/css/styles.css
+
+
+
 pug/*.pug
 img/*.jpg
 img/*.png
