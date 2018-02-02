@@ -1,0 +1,60 @@
+.central {
+  width: 100%;
+  background-color: #3ef568;
+  perspective: 2000px;
+}
+
+.conteiner {
+  width: 150px;
+  animation: rotar 10s infinite linear;
+  transform-style: preserve-3d;
+  margin: 15em auto;
+}
+
+.carta {
+  width: 150px;
+  height: 250px;
+  background-color: #7f7cf5;
+  border: 2px solid red;
+  position: absolute;
+  font-size: 55px;
+  line-height: 250px;
+  text-align: center;
+}
+
+.carta:nth-child(1) {
+  transform: rotateY(0deg) translateZ(200px);
+}
+
+.carta:nth-child(2) {
+  transform: rotateY(60deg) translateZ(200px);
+}
+
+.carta:nth-child(3) {
+  transform: rotateY(120deg) translateZ(200px);
+}
+
+.carta:nth-child(4) {
+  transform: rotateY(180deg) translateZ(200px);
+}
+
+.carta:nth-child(5) {
+  transform: rotateY(240deg) translateZ(200px);
+}
+
+.carta:nth-child(6) {
+  transform: rotateY(300deg) translateZ(200px);
+}
+
+.carta:nth-child(7) {
+  transform: rotateY(360deg) translateZ(200px);
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
