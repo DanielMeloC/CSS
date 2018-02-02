@@ -1,0 +1,193 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, hsl(180, 50%, 50%), hsla(240, 100%, 50%, 0.65), hsla(300, 50%, 50%, 0.5));
+}
+
+.content {
+  display: Grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  grid-gap: 10px;
+}
+
+.conteinerOne {
+  width: 500px;
+  height: 300px;
+  background: url('https://goo.gl/u6RW5v') center / cover no-repeat;
+  position: relative;
+  margin: 10% auto 0;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  z-index: 10;
+}
+
+.conteinerDos {
+  width: 500px;
+  height: 300px;
+  background: url('https://goo.gl/iQ8eYQ') center / cover no-repeat;
+  position: relative;
+  grid-column: 1 / span 1;
+  grid-row: 2;
+}
+
+.conteinerTres {
+  width: 500px;
+  height: 300px;
+  background: url('https://goo.gl/7nwiwA') center / cover no-repeat;
+  position: relative;
+  grid-column: 2 / span 1;
+  grid-row: 2;
+  margin-left: auto;
+}
+
+.conteinerOne::before {
+  content: 'Son Gokū';
+  background: hsla(240, 50%, 50%, 0.7);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  color: hsl(180, 80%, 80%);
+  opacity: 0;
+  transform: scale(0.01);
+  transition: all 0.8s;
+}
+
+.conteinerDos::before {
+  content: 'Vegeta';
+  background: hsla(180, 50%, 50%, 0.5);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  color: hsl(60, 70%, 80%);
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.conteinerTres::before {
+  content: 'Zamasu';
+  background: hsla(300, 50%, 50%, 0.5);
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  position: absolute;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  font-size: 55px;
+  color: hsl(60, 50%, 80%);
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.conteinerOne:hover::before {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.conteinerDos:hover::before {
+  transform: translateX(100%);
+  opacity: 1;
+}
+
+.conteinerTres:hover::before {
+  transform: translateX(-100%);
+  opacity: 1;
+}
+
+.conteinerOne:hover {
+  transform: scale(1.5);
+  transition: all 0.8s;
+}
+
+.conteinerDos:hover {
+  transform: scale(1.2);
+  transition: all 0.8s;
+  z-index: 20;
+}
+
+.conteinerTres:hover {
+  transform: scale(1.2);
+  transition: all 0.8s;
+  z-index: 20;
+}
+
+:not(.content) {
+  transition: all 0.9s;
+  transform: scale(1);
+  overflow: hidden;
+}
+
+@media (max-width: 1400px) {
+  .conteinerOne,
+  .conteinerDos,
+  .conteinerTres {
+    width: 350px;
+    height: 200px;
+  }
+
+  .conteinerOne::before,
+  .conteinerDos::before,
+  .conteinerTres::before {
+    width: 350px;
+    height: 200px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 780px) {
+  .content {
+    display: Grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    width: 100%;
+    height: 100%;
+  }
+
+  .conteinerOne {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 35px auto;
+    width: 95%;
+    height: 80%;
+  }
+
+  .conteinerDos {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 35px auto;
+    width: 95%;
+    height: 80%;
+  }
+
+  .conteinerTres {
+    grid-column: 1;
+    grid-row: 3;
+    margin: 35px auto;
+    width: 95%;
+    height: 80%;
+  }
+
+  .conteinerOne::before,
+  .conteinerDos::before,
+  .conteinerTres::before {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+  }
+}

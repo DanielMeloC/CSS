@@ -1,0 +1,76 @@
+body {
+  background-color: black;
+}
+
+.radial-first {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  margin: 7em auto;
+  border-radius: 50%;
+  display: flex;
+  position: relative;
+  border: 1px solid hsla(240, 50%, 80%, 0.4);
+}
+
+.radial-second:first-child {
+  width: 87%;
+  height: 87%;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 6.5%;
+  left: 6.5%;
+  border: 1px solid hsla(240, 50%, 80%, 0.4);
+}
+
+.radial-second:nth-child(2) {
+  width: 72%;
+  height: 72%;
+  background: linear-gradient(90deg, hsla(204, 97%, 20%, 0.8), hsla(169, 97%, 15%, 0.9));
+  border-radius: 50%;
+  position: absolute;
+  top: 14.5%;
+  left: 14.5%;
+}
+
+.radial-second:nth-child(3) {
+  width: 58%;
+  height: 58%;
+  border-radius: 50%;
+  position: absolute;
+  top: 21%;
+  left: 21%;
+  border: 0.15em solid #015638;
+  background: linear-gradient(90deg, hsla(204, 97%, 17%, 0.8), hsla(169, 97%, 15%, 0.9));
+}
+
+.radial-second:nth-child(4) {
+  width: 46%;
+  height: 46%;
+  border-radius: 50%;
+  position: absolute;
+  top: 27.5%;
+  left: 27.5%;
+  background: linear-gradient(90deg, hsla(192, 98%, 20%, 0.8), hsla(155, 98%, 22%, 0.9));
+}
+
+.radial-second:nth-child(5) {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  position: absolute;
+  top: 35.5%;
+  left: 35.5%;
+  background: linear-gradient(90deg, hsla(186, 97%, 23%, 0.8), hsla(144, 99%, 28%, 0.9));
+}
+
+.radial-second:last-child {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  position: absolute;
+  top: 40.5%;
+  left: 40.5%;
+  background: linear-gradient(90deg, hsla(181, 99%, 27%, 0.8), hsla(144, 100%, 35%, 0.9));
+}

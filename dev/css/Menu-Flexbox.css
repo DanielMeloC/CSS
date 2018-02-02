@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+header {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+  height: 50px;
+}
+
+li a {
+  text-decoration: none;
+  color: wheat;
+}
+
+.navigator {
+  margin: 0 auto;
+  width: 35%;
+}
+
+.menu,
+.submenu {
+  padding-left: 0;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+
+.item {
+  display: flex;
+  background-color: #230a3b;
+  position: relative;
+  flex-direction: column;
+  white-space: nowrap;
+  align-items: center;
+  padding: 1em;
+  flex-grow: 1;
+  transition: all 0.4s;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 150px;
+}
+
+.submenu li {
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+  background-color: #131c6e;
+  position: relative;
+  transition: all 0.4s;
+
+}
+
+.submenu-2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 170px;
+  transition: all 0.4s;
+}
+
+.submenu-3 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 66%;
+  left: 100%;
+  width: 90px;
+}
+
+.item:hover {
+  background-color: rgba(98, 133, 201, 0.95);
+}
+
+.submenu li:hover {
+  background-color: rgba(98, 133, 201, 0.95);
+}
+
+.item:hover .submenu > li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.submenu:hover .submenu-2 > li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.submenu-2:hover .submenu-3 > li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+

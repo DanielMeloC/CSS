@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: wheat;
+  color: #131c6e;
+  min-height: 100vh;
+  display: flex;
+  flex-grow: 1;
+  margin: 0;
+}
+
+main {
+  flex-grow: 10;
+  flex-basis: 90%;
+  margin-left: 60px;
+}
+
+nav {
+  flex-basis: 5%;
+  display: flex;
+  position: fixed;
+  margin-top: 200px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+img:hover {
+  background-color: #131c6e;
+  width: 55px;
+  transition: all 0.3s;
+  padding-left: 10px;
+  border-radius: 0 50px 50px 0;
+}
+
+p {
+  line-height: 50px;
+}

@@ -1,0 +1,80 @@
+body {
+  background-color: firebrick;
+  perspective: 2000px;
+}
+
+.circle {
+  width: 350px;
+  height: 350px;
+  margin: 25% auto;
+  position: relative;
+  animation: circle 3s infinite linear;
+  transform-style: preserve-3d;
+}
+
+@keyframes circle {
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+.circlelinear:nth-last-child(n-5) {
+  width: 100%;
+  height: 100%;
+  border: 4px solid #e2e1be;
+  transform: rotate(120deg);
+  position: absolute;
+  border-radius: 50%;
+}
+
+
+.circlelinear:nth-child(n+5) {
+  width: 100%;
+  height: 100%;
+  border: 4px solid yellowgreen;
+  transform: rotate(120deg);
+  position: absolute;
+  border-radius: 50%;
+}
+
+
+.circlelinear:nth-child(1) {
+  transform: rotateY(0deg);
+
+}
+
+.circlelinear:nth-child(2) {
+  transform: rotateY(40deg);
+}
+
+.circlelinear:nth-child(2) {
+  transform: rotateY(80deg);
+}
+
+.circlelinear:nth-child(3) {
+  transform: rotateY(120deg);
+}
+
+.circlelinear:nth-child(4) {
+  transform: rotateY(160deg);
+}
+
+.circlelinear:nth-child(5) {
+  transform: rotateX(200deg);
+}
+
+.circlelinear:nth-child(6) {
+  transform: rotateX(240deg);
+}
+
+.circlelinear:nth-child(7) {
+  transform: rotateX(280deg);
+}
+
+.circlelinear:nth-child(8) {
+  transform: rotateX(320deg);
+}
+
+.circlelinear:nth-child(9) {
+  transform: rotateX(360deg);
+}

@@ -1,0 +1,144 @@
+body {
+  width: 100%;
+  max-height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: whitesmoke;
+  z-index: 100;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+}
+
+img {
+  width: 60px;
+  padding: 1em;
+}
+
+li:hover .enlaces {
+  border-bottom: 3px solid #131c6e;
+}
+
+li {
+  width: 80px;
+  text-align: center;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+li:nth-child(4) {
+  margin-right: 50px;
+}
+
+li:nth-child(1) {
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ffa520;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fondo__purple {
+  position: absolute;
+  width: 110%;
+  height: 450px;
+  background: url("https://goo.gl/ErZ92d");
+  transform: rotate(1.8deg);
+  margin-left: -2%;
+  margin-top: -2%;
+  opacity: 0.8;
+}
+
+.fondo__text--purple {
+  width: 40%;
+  height: 100%;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: rotate(-1.8deg);
+  font-size: 50px;
+  color: #ffff28;
+  font-family: Dubai, fantasy;
+}
+
+cite {
+  align-self: flex-end;
+  text-align: right;
+  color: gold;
+  height: 5%;
+  width: 90%;
+  position: absolute;
+  font-size: 30px;
+  top: 95%;
+  transform: rotate(-1.8deg);
+  margin-left: 2%;
+}
+
+article {
+  font-size: 25px;
+  display: flex;
+  width: 100%;
+  height: 350px;
+  text-align: center;
+}
+
+section {
+  text-align: left;
+  width: 60%;
+  height: 100%;
+  line-height: 2em;
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 415px) {
+  section {
+    text-align: left;
+    width: 80%;
+    height: 100%;
+    line-height: 2em;
+    font-size: 15px;
+    margin: 0 auto;
+  }
+
+  .fondo__text--purple {
+    font-size: 40px;
+  }
+
+  cite {
+    font-size: 20px;
+  }
+
+  .fondo__purple {
+    background: url("https://goo.gl/ErZ92d");
+    background-size: cover;
+  }
+}
+
