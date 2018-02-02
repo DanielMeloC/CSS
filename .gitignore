@@ -148,7 +148,7 @@ dev/css/styles.css
 
 
 
-pug/*.pug
+/dev/pug/*.pug
 img/*.jpg
 img/*.png
 
